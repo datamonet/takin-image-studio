@@ -75,11 +75,14 @@ export function ImagePlayground({
     <div className="min-h-screen bg-background">
       <div className="mx-auto">
         <Header />
-        <div className="border-t">
+        <div className="relative border-t-thin">
+          {/* Full-height divider */}
+          <div className="hidden lg:block full-height-divider left-[20%]"></div>
           <div className="bg-background">
             <div className="grid lg:grid-cols-5">
+              
               {/* Left Sidebar - Prompt Input */}
-              <div className="col-span-5 lg:col-span-1 border-r p-4">
+              <div className="col-span-5 lg:col-span-1 p-4">
                 <div className="space-y-4">
                   <PromptInput
                     onSubmit={handlePromptSubmit}

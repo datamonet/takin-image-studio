@@ -35,7 +35,7 @@ function MainNav({ className, items, ...props }: MainNavProps) {
 export const Header = () => {
   return (
     <header>
-      <div className="border-b">
+      <div className="border-b-thin">
         <div className="flex h-16 items-center px-4">
           <Link href="https://takin.ai" target="_blank" className="flex items-center hover:opacity-90 transition-opacity">
             {/* eslint-disable-next-line @next/next/no-img-element */}
